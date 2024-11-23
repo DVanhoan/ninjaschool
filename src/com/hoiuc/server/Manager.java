@@ -675,7 +675,7 @@ public class Manager {
             res.close();
 
             i = 0;
-            for(res = SQLManager.stat.executeQuery("SELECT * FROM `ItemSell`;"); res.next(); ++i) {
+            for(res = SQLManager.stat.executeQuery("SELECT * FROM `itemsell`;"); res.next(); ++i) {
                 ItemSell sell = new ItemSell();
                 sell.id = Integer.parseInt(res.getString("id"));
                 sell.type = Byte.parseByte(res.getString("type"));
