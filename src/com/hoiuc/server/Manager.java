@@ -159,7 +159,7 @@ public class Manager {
             }
             System.out.println("Load Map MobTemplate..");
             try {
-                res = SQLManager.stat.executeQuery("SELECT * FROM `Mob`;");
+                res = SQLManager.stat.executeQuery("SELECT * FROM `mob`;");
                 if (res.last()) {
                     Mob.arrMobTemplate = new MobCache[res.getRow()];
                     res.beforeFirst();
